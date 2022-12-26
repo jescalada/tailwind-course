@@ -4,10 +4,280 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Template</title>
+    <title>Cliply: Next-gen Snippets</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="text-3xl">Tailwind Template</h1>
+    <!-- Hero section -->
+    <section>
+      <div class="section-container mb-40 px-10 pt-16">
+        <img src="images/logo.svg" alt="" class="mx-auto my-16" />
+        <h3>A history of everything you copy</h3>
+
+        <p class="max-w-3xl mx-auto mb-10 text-2xl text-grayBlue">
+          Cliply lets you track and organize everything you copy. Instantly
+          access your clipboard across all your devices.
+        </p>
+
+        <!-- Button Container -->
+        <div
+          class="flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4"
+        >
+          <a
+            href="#"
+            class="p-4 px-8 bg-strongCyan rounded-full shadow-lg duration-200 hover:opacity-80 hover:cursor-pointer"
+            >Download for iOS</a
+          >
+          <a
+            href="#"
+            class="p-4 px-8 bg-lightBlue rounded-full shadow-lg duration-200 hover:opacity-80 hover:cursor-pointer"
+            >Download for Windows</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Snippets Section -->
+    <section>
+      <div class="section-container my-20 px-10">
+        <h3>Keep track of your snippets</h3>
+        <p class="section-content">
+          Cliply instantly stores any item you copy in the cloud, so you can
+          access your snippets immediately on all your devices. Our Mac and iOS
+          apps will help you organize everything.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+      <div class="section-container my-20 px-10">
+        <div class="relative flex flex-col md:flex-row md:space-x-32">
+          <!-- Image -->
+          <div class="md:w-1/2">
+            <img
+              src="images/image-computer.png"
+              alt=""
+              class="md:absolute top-0 right-[50%]"
+            />
+          </div>
+
+          <!-- Items Container -->
+          <div
+            class="flex flex-col mt-16 mb-24 space-y-12 text-xl md:mb-60 md:text-left md:pl-16 md:w-1/2"
+          >
+            <!-- Item 1 -->
+            <div>
+              <h5 class="mb-2 text-2xl font-bold text-darkGrayBlue">
+                Quick Search
+              </h5>
+              <p class="max-w-md text-grayBlue">
+                Easily search your snippets by content, category, web address,
+                application and more!
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div>
+              <h5 class="mb-2 text-2xl font-bold text-darkGrayBlue">
+                iCloud Sync
+              </h5>
+              <p class="max-w-md text-grayBlue">
+                Instantly save and sync your snippets across all your devices.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div>
+              <h5 class="mb-2 text-2xl font-bold text-darkGrayBlue">
+                Full History
+              </h5>
+              <p class="max-w-md text-grayBlue">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More features Section -->
+    <section>
+      <div class="section-container my-20 px-10">
+        <h3>Access Cliply Anywhere</h3>
+        <p class="section-content mb-12">
+          Whether you're at home, at work or on the go, all your Cliply snippets
+          will be one click away.
+        </p>
+        <img src="images/image-devices.png" alt="" class="mx-auto" />
+      </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section>
+      <div class="section-container px-10">
+        <h3>Supercharge your workflow</h3>
+        <p class="section-content mb-12">
+          If productivity is your goal, we got you covered.
+        </p>
+
+        <!-- Items Container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12"
+        >
+          <!-- Item 1 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-blacklist.svg" alt="" class="mb-6" />
+            <h5 class="mb-2 text-2xl font-bold text-darkGrayBlue">
+              Smart Filters
+            </h5>
+            <p class="max-w-md text-grayBlue">
+              Apply automatic filters to snippets in order to save what matters
+              the most.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-text.svg" alt="" class="mb-6" />
+            <h5 class="mb-2 text-2xl font-bold text-darkGrayBlue">
+              Plain Text snippets
+            </h5>
+            <p class="max-w-md text-grayBlue">
+              Remove any unwanted formatting from copied text for a consistent
+              look.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-preview.svg" alt="" class="mb-6" />
+            <h5 class="mb-2 text-2xl font-bold text-darkGrayBlue">Previews</h5>
+            <p class="max-w-md text-grayBlue">
+              Quickly preview all your Cliply snippets for easy access.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section>
+      <div
+        class="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0"
+      >
+        <img src="images/logo-google.png" alt="" />
+        <img src="images/logo-ibm.png" alt="" />
+        <img src="images/logo-microsoft.png" alt="" />
+        <img src="images/logo-hp.png" alt="" />
+        <img src="images/logo-vector-graphics.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section>
+      <div class="section-container my-20 px-10">
+        <h3>Cliply for iOS and MacOS</h3>
+        <p class="section-content mb-12">
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCloud and you're ready to start adding to your clipboard.
+        </p>
+
+        <!-- Button Container -->
+        <div
+          class="flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4"
+        >
+          <a
+            href="#"
+            class="p-4 px-8 bg-strongCyan rounded-full shadow-lg duration-200 hover:opacity-80 hover:cursor-pointer"
+            >Download for iOS</a
+          >
+          <a
+            href="#"
+            class="p-4 px-8 bg-lightBlue rounded-full shadow-lg duration-200 hover:opacity-80 hover:cursor-pointer"
+            >Download for Windows</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50">
+      <div class="section-container">
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <!-- Image -->
+          <img src="images/logo.svg" alt="" class="scale-50" />
+          <!-- Container for Menus and Social -->
+          <div
+            class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:space-y-0 text-grayBlue"
+          >
+            <div
+              class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0"
+            >
+              <!-- Menu 1 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">FAQs</a>
+                </div>
+              </div>
+
+              <!-- Menu 2 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Privacy Policy</a>
+                </div>
+              </div>
+
+              <!-- Menu 3 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan"
+                    >Installation Guide</a
+                  >
+                </div>
+              </div>
+
+              <!-- Menu 4 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Press Kit</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex justify-between w-32 py-1">
+              <a href="#">
+                <img
+                  src="images/icon-facebook.svg"
+                  alt=""
+                  class="duration-200 ficon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/icon-twitter.svg"
+                  alt=""
+                  class="duration-200 ficon"
+                /> </a
+              ><a href="#">
+                <img
+                  src="images/icon-instagram.svg"
+                  alt=""
+                  class="duration-200 ficon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
