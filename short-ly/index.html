@@ -105,6 +105,7 @@
         >
           <input
             type="text"
+            id="link-input"
             class="flex-1 p-3 border-2 rounded-lg placeholder-cyanLight text-lg font-medium focus:outline-none"
             placeholder="Enter your link"
           />
@@ -114,6 +115,12 @@
           >
             Shorten it!
           </button>
+
+          <!-- Error Message -->
+          <div
+            id="form-error"
+            class="absolute left-7 bottom-3 text-red text-sm italic"
+          ></div>
         </form>
 
         <!-- Link 1 -->
@@ -184,4 +191,5 @@
       </div>
     </section>
   </body>
+  <script src="js/script.js"></script>
 </html>
