@@ -4,10 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Template</title>
+    <title>Short.ly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 class="text-3xl">Tailwind Template</h1>
+    <!-- Nav Container -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Container for Everything -->
+      <div class="flex items-center justify-between">
+        <!-- Flex Container for Logo and Menu -->
+        <div class="flex items-center space-x-20">
+          <!-- Logo -->
+          <img src="images/logo.svg" alt="" />
+          <!-- Left Menu -->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Features</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Pricing</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >FAQ</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <!-- Right Buttons Menu -->
+        <div
+          class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex"
+        >
+          <div class="hover:text-veryDarkViolet cursor-pointer">Login</div>
+          <div
+            class="px-8 py-3 font-bold text-white bg-cyan cursor-pointer rounded-full hover:opacity-70 hover:text-veryDarkViolet"
+          >
+            Sign Up
+          </div>
+        </div>
+
+        <!-- @todo Hamburger Menu -->
+      </div>
+      <!-- @todo Mobile Menu -->
+    </nav>
+
+    <!-- Hero Section -->
+    <section>
+      <!-- Hero Container -->
+      <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+        <!-- Content Container -->
+        <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52">
+          <h1
+            class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left"
+          >
+            More than just shorter links
+          </h1>
+          <p
+            class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left"
+          >
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <div class="mx-auto lg:mx-0">
+            <a
+              href=""
+              class="py-4 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70"
+              >Get Started</a
+            >
+          </div>
+        </div>
+
+        <div class="mb-24 mx-auto md:w-128 lg:mb-0 lg:mt-16 xl:mt-0 lg:w-1/2">
+          <img src="images/illustration-working.svg" alt="" class="" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
