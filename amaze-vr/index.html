@@ -56,7 +56,30 @@
               ></div>
             </div>
           </div>
+
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div
+          id="menu"
+          class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+        >
+          <a href="#" class="hover:text-pink-500">About</a>
+          <a href="#" class="hover:text-pink-500">Creations</a>
+          <a href="#" class="hover:text-pink-500">Careers</a>
+          <a href="#" class="hover:text-pink-500">Contact</a>
+        </div>
 
         <div
           class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl"
@@ -85,7 +108,7 @@
           </h2>
 
           <p class="max-w-md text-center md:text-left">
-            Founded in 2017, AmazeVR has been producing world-class virtual
+            Founded in 2017, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
             digital experiences that strengthen their brand.
@@ -420,4 +443,6 @@
       </div>
     </footer>
   </body>
+
+  <script src="js/script.js"></script>
 </html>
